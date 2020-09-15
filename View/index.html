@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="\css\style.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h2>To-Do List</h2>
+            <p>Enter text into the input field to add items to your list.</p>
+            <p>Click the "X" to remove the item from your list.</p>
+            <p>Click the item to mark it as complete.</p>
+        </div>
+        <input class="iput" type="text" id="myInput" placeholder="Input to do">
+        <span onclick="newElement()">
+            <i class="fa fa-plus-circle plus"></i>
+        </span>
+
+        <ul id="myUL">
+            <li>Do something</li>
+            <li class="checked">Wake up and breath</li>
+            <li>Meet someone</li>
+            <li>Buy something</li>
+            <li>Sleep one more time</li>
+            <li>Read some books</li>
+        </ul>
+    </div>
+    <script src="\js\main.js"></script>
+    </script>
+</body>
+
+</html>

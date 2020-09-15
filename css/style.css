@@ -1,0 +1,91 @@
+    body {
+        margin: 0;
+        min-width: 500px;
+        background: rgb(215, 228, 235);
+    }
+    
+    * {
+        box-sizing: border-box;
+    }
+    
+    .container {
+        margin: auto;
+        padding: 10px;
+        background: #f5f3f3;
+        font-family: Arial, Helvetica, sans-serif;
+        width: 460px;
+        height: 680px;
+    }
+    
+    .header {
+        text-align: center;
+        margin-bottom: 20px;
+        color: white;
+        background-image: linear-gradient(blue, white, tomato)
+    }
+    
+    .iput {
+        margin-right: 20px;
+        margin-left: 30px;
+        width: 75%;
+        padding: 5px;
+    }
+    
+    .plus {
+        color: rgb(111, 111, 255);
+        font-size: 40px;
+        position: absolute;
+    }
+    
+    .plus:hover {
+        background-color: rgb(117, 112, 112);
+        cursor: pointer;
+    }
+    
+    .header:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+    
+    ul {
+        margin: 0;
+        padding: 0;
+    }
+    
+    ul li {
+        cursor: pointer;
+        position: relative;
+        padding: 12px 8px 12px 40px;
+        background: #eee;
+        list-style-type: none;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+    
+    ul li:hover {
+        background: #ddd;
+    }
+    
+    ul li.checked {
+        background: #888;
+        color: #fff;
+    }
+    
+    ul li.checked::after {
+        content: '(completed)';
+    }
+    
+    .close {
+        position: absolute;
+        right: 0;
+        top: 0;
+        padding: 12px 16px 12px 16px;
+    }
+    
+    .close:hover {
+        background-color: rgb(241, 12, 12);
+        color: white;
+    }
